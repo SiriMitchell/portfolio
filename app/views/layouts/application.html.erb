@@ -7,9 +7,21 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <script src="https://kit.fontawesome.com/fc19e69a08.js"></script>
   </head>
 
   <body>
+
+    <div class="sidebar">
+      <a class="active" href="/"><br />Siri Mitchell<hr><p>Full Stack Developer</p></a><br />
+      <a href="/about">About</a>
+      <a href="/skills">Skills</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+      <a href="/resume">Resume</a>
+    </div>
+
+
     <%= yield %>
   </body>
 </html>
