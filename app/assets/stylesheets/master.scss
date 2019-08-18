@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: transparent;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -15,23 +15,24 @@
 /* Sidebar links */
 .sidebar a {
   display: block;
-  color: black;
+  color: white;
+  background-color: transparent;
   padding: 16px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Kaushan Script', cursive;
-  text-align: center;
 }
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #45638f;
+  background-color: transparent;
   color: white;
+  text-align: center;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-  background-color: #555;
+  background-color: black;
   color: white;
 }
 
@@ -59,5 +60,40 @@
     text-align: center;
     float: none;
   }
+}
+
+
+
+body {
+  background-color: grey;
+}
+
+.jumbotron {
+  background-image: url('keys.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1150px;
+}
+
+.header {
+  font-size: 200px;
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  margin-left: 75px;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  margin-left: 75px;
+  margin-top: 15px;
+}
+
+.headshot {
+  border-radius: 100px;
 }
 
