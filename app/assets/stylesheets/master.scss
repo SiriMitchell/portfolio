@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Marck+Script|Spicy+Rice&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 
 * {
@@ -8,7 +9,7 @@
   padding: 0;
 }
 
-body {
+.index {
   background: url('arrowleft.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,55 +23,147 @@ html {
 }
 
 .title {
-  font-size: 100px;
+  font-size: 140px;
   font-family: 'Kaushan Script', cursive;
   color: #0e1f2e;
-  margin-left: 300px;
-  margin-top: 125px;
-}
-
-.intro {
-  font-size: 20px;
-  font-family: 'Kaushan Script', cursive;
-  color: #0e1f2e;
-  text-align: center;
+  margin-left: 5px;
+  margin-top: 25px;
 }
 
 .name {
-  text-align: center;
+  font-size: 120px;
+  font-weight: bold;
+  color: #0e1f2e;
+  margin-left: 0px;
 }
 
 .webdev {
+  font-size: 20px;
+  color: #0e1f2e;
   text-align: left;
 }
 
-.nice {
+
+.icon-bar {
   text-align: right;
+  margin-right: 20px;
+  padding: 10px 5px;
+  
 }
 
-.fas .fa .fab {
-  margin-left: 15px;
-}
 
 .headshot {
   justify: center;
   border-radius: 50px;
+  width: 180px;
+  height: 200px;
+  float: right;
+  margin-right: 110px;
+}
+
+.col-sm-8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
+  height: 100%;
+  background: transparent;
+}
+
+.col-sm-6 {
+  text-align: center;
 }
 
 
-h2 {
-  font-size: 60px;
+.link {
+  color: #222;
+  text-decoration: none;
   font-family: 'Kaushan Script', cursive;
-  color: white;
-  margin-left: 75px;
-  margin-top: 15px;
+  font-size: 60px;
+  position: relative;
+  padding: 10px 50px 10px 20px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+      transform: scale(3);
 }
 
-h4 {
-  font-size: 35px;
-  font-family: 'Roboto Condensed', sans-serif;
+.link .bt {
+  background: #222;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -1px;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
+.link:hover {
+  padding-right: 20px;
+  color: #fff;
+}
+
+.link:hover .bt {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+      trnasform: translate(0, -50%);
+}
+
+.link .bt:before, .link .bt:after {
+  content: '';
+  height: 2px;
+  width: 10px;
+  background: #222;
+  position: absolute;
+  right: -2px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.link .bt:before {
+  bottom: 3px;
+  -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+}
+
+.link .bt:after {
+  top: 3px;
+  -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+}
+
+.link:hover .bt:before, .link:hover .bt:after {
+  right: 0;
+}
+
+.link:hover .bt:before {
+  bottom: 6px;
+}
+
+.link:hover .bt:after {
+  top: 6px;
+}
+
+
+
+
+/*not used currently */
 
 
 .booyah-box2 {
