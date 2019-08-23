@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 
+
+/* CSS for the index page */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -75,10 +79,12 @@ html {
   background: transparent;
 }
 
-.col-sm-6 {
-  text-align: center;
+.pages {
+  text-align: right;
+  margin-top: 0px;
 }
 
+/* Code for link buttons on index page */
 
 .link {
   color: #222;
@@ -163,36 +169,142 @@ html {
 
 
 
-/*not used currently */
+/* CSS for the skills page */
 
-
-.booyah-box2 {
-  box-shadow: 0px 3px 8px #2a2a2a;
-  background: black;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
-  height: 750px;
+.skills {
+  background: url('tools.jpg');
+  background-repeat: no repeat;
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
+  height: 100%;
 }
 
-.booyah-box1 {
-  box-shadow: 0px 3px 8px #2a2a2a;
-  background: #E0E0E0;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
-  height: 750px;
+.col-sm-6 {
+  font-weight:15px;
+  font-size: 25px;
+  word-spacing: 10px;
+}
+
+.tools {
+  font-size: 60px;
+  font-weight: 20px;
+  font-family: 'Kaushan Script', cursive;
+  color: #0e1f2e;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+/* CSS for projects page */
+
+.projects {
+  background: white;
+  background-repeat: no repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   width: 100%;
+  height: 100%;
 }
 
-.aboutpic {
- height: 250px;
- width: 200px;
- border-radius: 50px;
- margin-right: 10px; 
- item-align: right;
+/* flip-card code */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/* funky hover button */
+
+.button {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 60px;
+  width: 210px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+
+  span
+    color: rgba(22, 76, 167, 1)
+    font-size:12px
+    font-weight: 500
+    letter-spacing: 0.7px
+    
+  &:hover 
+    animation: rotate 0.7s ease-in-out both
+    span
+      animation:storm 0.7s ease-in-out both
+      animation-delay: 0.06s      
+
+
+
+@keyframes rotate
+  0%
+    transform: rotate(0deg) translate3d(0, 0, 0)
+  25%
+    transform: rotate(3deg) translate3d(0, 0, 0)
+  50%
+    tranform: rotate(-3deg) translate3d(0, 0, 0)
+  75%
+    tranform: rotate(1deg) translate3d(0, 0, 0)
+  100%
+    transform: rotate(0deg) translate3d(0, 0, 0)
+
+@keyframes storm
+  0%
+    transform: translate3d(0, 0, 0) translateZ(0)
+  25%
+    transform: translate3d( 4px, 0, 0) translateZ(0)
+  50%
+    transform: translate3d( -3px, 0, 0) translateZ(0)
+  75%
+    tranform: translate3d( 2px, 0, 0) translateZ(0)
+  100%
+    transform: translate3d(0, 0, 0) translateZ(0)
+    }
