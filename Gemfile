@@ -73,3 +73,4 @@ group :development, :test do
 end
 
 gem 'font-awesome-sass', '~> 5.9.0'
+gem 'compass', '~> 1.0', '>= 1.0.3'
