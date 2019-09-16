@@ -1,0 +1,12 @@
+.index {
+  height: 95vh;
+  background: linear-gradient(
+    to right bottom, 
+    rgba(69,118,245, 0.4), 
+    rgba(8, 50, 156, 0.4)), 
+    url('nashville2.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}

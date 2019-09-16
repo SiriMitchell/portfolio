@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Norican&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lemon|Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sonsie+One&display=swap');
+
+
+.greeting-title {
+  margin-bottom: 1px;
+  font-size: 12rem;
+  font-family: 'Lemon', cursive;
+  color:$color-white;
+  text-shadow:
+  -1px -1px 0 $color-black,
+  1px -1px 0 $color-black,
+  -1px 1px 0 $color-black,
+  1px 1px 0 $color-black;
+
+  animation-name: dropInHello;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+  
+.greeting-name {
+  margin-top: 1px;
+  font-size: 12rem;
+  font-family: 'Lemon', cursive;
+  color: $color-white;
+  text-shadow:
+  -1px -1px 0 $color-black,
+  1px -1px 0 $color-black,
+  -1px 1px 0 $color-black,
+  1px 1px 0 $color-black;
+
+  animation-name: moveInName;
+  animation-duration: 1.4s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+  
+.greeting-description {
+  margin-top: 1.2rem;
+  font-size: 2rem;
+  font-family: 'Lobster Two', cursive;
+  color: $color-white;
+
+  animation-name: riseUpDev;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+.vertical-text {
+  transform: rotate(270deg);
+  transform-origin: left top 0;
+  justify-content: center;
+  float: left;
+  margin: 0;
+  position: absolute;
+  top: 105%;
+  padding-left: 5rem;
+}
+  

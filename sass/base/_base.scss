@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    width: 100vw;
+    height: 95vh;
+    font-size: 62.5%;
+  }
+
+  body {
+      line-height: 1.2;
+      padding: 3rem;
+      list-style-type: none;
+  }
