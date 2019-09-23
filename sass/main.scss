@@ -13,7 +13,8 @@
 @import "layout/grid";
 @import "layout/navbar";
 
-@import "pages/home";
+@import "pages/index";
+@import "pages/skills";
 
 
 
@@ -28,28 +29,8 @@
 
 /* CSS for the skills page */
 
-.skills {
-  background: url('tools.jpg');
-  background-repeat: no repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-}
 
-.col-sm-6 {
-  font-weight:1.5rem;
-  font-size: 2.5rem;
-  word-spacing: 1rem;
-}
 
-.tools {
-  font-size: 6rem;
-  font-weight: 2rem;
-  font-family: 'Kaushan Script', cursive;
-  color: $color-black;
-  padding-bottom: 1rem;
-}
 
 
 

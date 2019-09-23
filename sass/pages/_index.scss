@@ -1,0 +1,125 @@
+.index {
+  height: 95vh;
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+  background: linear-gradient(
+    to right bottom, 
+    rgba(69,118,245, 0.4), 
+    rgba(8, 50, 156, 0.4)), 
+    url('nashville2.jpg');
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.container {
+  display: inline-grid;
+  grid-template-columns: 250px auto 260px;
+  grid-template-rows: [row1-start] 130px [row1-end] 250px [third-line] auto [last-line];
+  grid-template-areas:
+    "header main sidebar"
+    "header main sidebar"
+    "header main sidebar";
+}
+
+.item-1 {
+  grid-area: header;
+  justify-items: start;
+  text-align: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Lobster Two', cursive;
+    
+  .nav-item{
+    margin-bottom: 2rem;
+
+      .nav-link{
+    color: $color-white;
+    }
+  }
+}
+
+.item-2 {
+  grid-area: main;
+  align-items: start;
+  justify-items: center;
+
+  .greeting-title {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 12rem;
+    font-family: 'Lemon', cursive;
+    color:$color-white;
+    text-shadow:
+    -1px -1px 0 $color-black,
+    1px -1px 0 $color-black,
+    -1px 1px 0 $color-black,
+    1px 1px 0 $color-black;
+  
+    animation-name: dropInHello;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+  }
+    
+  .greeting-name {
+    margin-top: 1px;
+    font-size: 12rem;
+    font-family: 'Lemon', cursive;
+    color: $color-white;
+    text-shadow:
+    -1px -1px 0 $color-black,
+    1px -1px 0 $color-black,
+    -1px 1px 0 $color-black,
+    1px 1px 0 $color-black;
+  
+    animation-name: moveInName;
+    animation-duration: 1.4s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+  }
+    
+  .greeting-description {
+    margin-top: 1.2rem;
+    font-size: 2rem;
+    font-family: 'Lobster Two', cursive;
+    color: $color-white;
+  
+    animation-name: riseUpDev;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+  }
+}
+
+.item-3 {
+  grid-area: sidebar;
+  grid-row: third-line / last-line;
+  align-items: start;
+  justify-items: right;
+  list-style-type: none;
+  margin-top: 1rem;
+  padding: 0;
+  overflow: hidden;
+  
+  .li {
+    float: right;
+    margin-right: 10rem;
+
+    .li a {
+      display: block;
+      background: transparent;
+      text-align: right;
+    }
+  }
+}
+
